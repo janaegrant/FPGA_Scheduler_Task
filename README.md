@@ -1,3 +1,4 @@
+
 # FPGA Real-Time Task Scheduler
 
 A Verilog LED task scheduler implemented on the DE10-Lite FPGA. It selects
@@ -39,7 +40,32 @@ scheduled task resumes from its previous point after the override.
 I implemented the design on the DE10-Lite and recorded it running on the
 device: [demo](https://youtu.be/HVqbHCKJYyo).
 
-I have not yet ran a testbench.
+### Simulation Verification
+
+I developed a self-checking SystemVerilog testbench and simulated the design
+using Icarus Verilog on EDA Playground.
+
+**Results: 228 checks passed, 0 failures.**
+
+The testbench verifies:
+
+- Timer counting and rollover from 59 to 0.
+- Task selection at scheduling boundaries.
+- Task 2 LED activation at specified intervals.
+- Task 3 running LED movement and wraparound.
+- Task 4 running LED movement and direction reversal.
+- Warning interrupt LED patterns and timer pause.
+- SOS Morse-code sequence, continuous repetition, and interrupt priority.
+- Task pause/resume and state preservation during interrupts.
+- Asynchronous reset during active tasks and interrupts.
+
+The testbench uses accelerated internal timing signals to verify functional
+behavior without simulating millions of clock cycles. Full clock-divider
+timing verification was not included in the reported results.
+
+**Verification files:**
+- [SystemVerilog Testbench](tb/testbench.sv)
+- [Verification Results](docs/verification_results.md)
 
 ## Notes
 Quartus pin-assignment file is not
