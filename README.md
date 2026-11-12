@@ -64,7 +64,7 @@ behavior without simulating millions of clock cycles. Full clock-divider
 timing verification was not included in the reported results.
 
 **Verification files:**
-- [SystemVerilog Testbench]([tb/testbench.sv](https://github.com/janaegrant/FPGA_Scheduler_Task/blob/main/testbench.sv))
+- [SystemVerilog Testbench]((https://github.com/janaegrant/FPGA_Scheduler_Task/blob/main/testbench.sv))
 
 
 ## Notes
