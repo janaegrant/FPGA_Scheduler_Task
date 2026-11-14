@@ -141,15 +141,6 @@ The observed waveform demonstrated that:
 **Result: Expected waveform behaviour observed.**
 
 
-The observed waveform demonstrated that:
-
-- Task 3 advanced normally before SOS activation.
-- Task 3's position remained unchanged during SOS.
-- SOS controlled the LED outputs while active.
-- Task 3 resumed from its saved position after SOS ended.
-
-**Result: Expected waveform behaviour observed.**
-
 ---
 
 ## 4. Real-Time Timing Verification - `scheduler_timing.v`
