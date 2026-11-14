@@ -121,12 +121,14 @@ Task 3: LED0 → LED1 → LED2
 Task 3:              LED2 → LED3
 ```
 
+
 ### Waveform Verification Results
 
 The following waveform demonstrates Task 3 being interrupted
 by SOS and resuming from its saved position.
 
 ![Task 3 SOS Interrupt Waveform](Screenshot%202026-11-13%20200253.png)
+
 ### Results
 
 The observed waveform demonstrated that:
