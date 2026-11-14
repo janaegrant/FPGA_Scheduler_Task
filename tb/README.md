@@ -193,8 +193,7 @@ The Warning timing check remains unresolved in the recorded test results and req
 | Verilog HDL | RTL design and testbench development |
 | Siemens Questa Altera Starter FPGA Edition 2025.2 | Simulation and waveform analysis |
 | Intel Quartus Prime | FPGA design compilation |
-| Terasic DE10-Lite | Target FPGA development board |
-| 50 MHz clock | Real-time timing verification |
+| DE10-Lite | FPGA development board |
 
 ---
 
